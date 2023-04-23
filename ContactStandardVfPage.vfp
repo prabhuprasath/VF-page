@@ -1,0 +1,19 @@
+<apex:page standardController="Contact">
+    <apex:form>
+    
+    <apex:pageBlock >
+    	<apex:pageBlockSection columns="1">
+            <apex:inputText label="Enter first Name" value="{!Contact.FirstName}"></apex:inputText>
+        	 <apex:inputText label="Enter Last Name" value="{!Contact.LastName}"></apex:inputText>
+             <apex:inputField label="Enter Birthdate" value="{!Contact.Birthdate}"></apex:inputField>
+             <apex:inputField label="Enter Title" value="{!Contact.Title}"></apex:inputField>
+        </apex:pageBlockSection>
+        <apex:pageBlockButtons>
+            <apex:commandButton value="save" action="{!save}" ></apex:commandButton>
+                 <apex:commandButton value="Cancel"  action="{!cancel}"></apex:commandButton>
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+        </apex:form>
+</apex:page>
+
+// For standardController Apex class is not needed
