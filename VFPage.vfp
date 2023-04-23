@@ -1,0 +1,49 @@
+<apex:page>
+    <apex:form>
+    <apex:pageBlock title="fav fruits">
+        <apex:pageBlockButtons>
+         <apex:commandButton value="save"></apex:commandButton>
+        </apex:pageBlockButtons>
+    <apex:pageBlockSection title="list">
+        
+        <apex:pageBlockSectionItem>Banana</apex:pageBlockSectionItem><br/>
+            <apex:pageBlockSectionItem>ball</apex:pageBlockSectionItem><br/>
+            <apex:pageBlockSectionItem>bascket</apex:pageBlockSectionItem>
+        
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+        
+       
+        </apex:form>
+    <apex:pageBlock>
+        <apex:form>
+        <apex:pageBlockSection title="in/out/selectlist/tabpanel/tab">
+            
+            <apex:inputText label="Enter your name "></apex:inputText><br/>
+            <apex:inputCheckbox label="tick me"></apex:inputCheckbox>
+        </apex:pageBlockSection>
+            <apex:pageBlockSection title="in/out/selectlist/tabpanel/tab">
+                <apex:outputText label="Vf is cool"></apex:outputText><br/>
+           
+        </apex:pageBlockSection>
+            <apex:pageBlockSection title="in/out/selectlist/tabpanel/tab">
+                <apex:selectList label="which is best it services" size="1">
+                <apex:selectOption itemLabel=" product based company" itemValue="pb"></apex:selectOption>
+                 <apex:selectOption itemLabel=" service based company" itemValue="sb"></apex:selectOption>
+                 <apex:selectOption itemLabel=" both based company" itemValue="bb"></apex:selectOption>
+           </apex:selectList>
+        </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="select any one">
+            
+            <apex:tabPanel title="Games" switchType="client">
+                <apex:tab label="one">A</apex:tab>
+            	 <apex:tab label="two">B</apex:tab>
+                 <apex:tab label="thrid">C</apex:tab>
+                </apex:tabPanel>
+            </apex:pageBlockSection>
+            
+     </apex:form>
+    </apex:pageBlock>
+  
+</apex:page>
